@@ -1,0 +1,14 @@
+if [ -a $1 ]
+	then
+		tmpFile=$1.tmp
+		head -c -1 $1 > $tmpFile
+		PATH=$(tr '\n' ':' < $tmpFile)
+		rm -f $tmpFile
+		unset tmpFile
+fi
+
+_IFS=$IFS
+IFS=:
+printf "%s\n" $PATH
+IFS=$_IFS
+unset _IFS
