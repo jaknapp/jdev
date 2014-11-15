@@ -1,3 +1,2 @@
-cd ../
-git clone https://github.com/jaknapp/jdev/dotfiles.git
-ln -sb dotfiles/.bash_profile ~/
+git clone https://github.com/jaknapp/jdev/jdev.git
+ln -sb jdev/dotfiles/.bash_profile ~/
