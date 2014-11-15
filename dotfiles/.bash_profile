@@ -47,3 +47,5 @@ export PATH=~/j/sh:$PATH
 alias ssh_aws_ec2_ubuntu='ssh -i ~/j/j.pem ubuntu@ec2-54-186-144-107.us-west-2.compute.amazonaws.com'
 alias aliassave='alias $1 >> ~/.bash_profile'
 alias ll='ls -la'
+alias cd_2d='cd /cygdrive/c/xampp/htdocs/lj/j/2d'
+alias ls_f='find . -maxdepth 1 -type f'
